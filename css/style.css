@@ -38,6 +38,9 @@ a {
 ul {
     list-style: none;
 }
+.active {
+    color: var(--primary);
+}
 /*********************
 topbar
 *********************/
@@ -57,4 +60,23 @@ topbar
 .topbar a i {
     color: var(--text);
     font-size: 2.5rem;
+}
+/*********************
+nav
+*********************/
+nav {
+    padding: 15px 0;
+    text-align: center;
+}
+nav ul li {
+    /* float: left;   moze i ovo ali je bolje display inline */ 
+    display: inline-block;
+    margin: 0 30px;
+}
+nav ul li a {
+    color: var(--black);
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: var(--primary);
 }
