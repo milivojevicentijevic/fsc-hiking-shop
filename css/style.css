@@ -70,6 +70,12 @@ h2::before {
     background-color: var(--primary);
     margin-bottom: 10px;
 }
+hr {
+    background-color: var(--lightgray);
+    height: 1px;
+    margin: 20px 0;
+    border: none;
+}
 /*********************
 topbar
 *********************/
@@ -247,14 +253,30 @@ products
 .products .item img{
     width: 100%;
 }
-/*
-.owl-carousel .item {
-    border: 1px solid var(--borders);
-    padding: 30px;
-    border-radius: 5px;
-    transition: var(--transition);
+/*********************
+about
+*********************/
+.about div:first-child {
+    width: 40%;
+    float: left;
 }
-.owl-carousel .item:hover {
-    border: 1px solid var(--primary);
+.about div:last-child {
+    width: 58%;
+    float: right;
 }
-*/
+.about img {
+    width: 100%;
+}
+.about p {
+    margin-bottom: 15px;
+    line-height: 2;
+}
+.about .icons {
+    margin-right: auto;
+}
+.about span {
+    margin-left: 10px;
+}
+.about span a:hover {
+    color: var(--black);
+}
