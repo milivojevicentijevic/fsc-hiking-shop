@@ -148,3 +148,40 @@ featuredItems
 .owl-carousel .item:hover {
     border: 1px solid var(--primary);
 }
+/*********************
+subscribe
+*********************/
+.subscribe {
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--white);
+}
+.subscribe h3 {
+    font-size: 1.5rem;
+}
+.subscribe p {
+    padding: 30px 0;
+}
+.subscribe input {
+    padding: 10px;
+    border-radius: 5px;
+}
+.subscribe input[type="email"] {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.subscribe input[type="email"]::placeholder {
+    color: var(--white);
+}
+.subscribe input[type="submit"] {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    cursor: pointer;
+    padding: 11px 50px;
+}
+.subscribe input[type="submit"]:hover {
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
