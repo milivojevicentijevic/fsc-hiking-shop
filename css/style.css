@@ -46,6 +46,11 @@ ul {
     margin: auto;
     padding: 100px 0;
 }
+.container::after {
+    display: block;
+    content: "";
+    clear: both;
+}
 button {
     padding: 15px 40px;
     margin-top: 25px;
@@ -173,7 +178,7 @@ subscribe
     color: var(--white);
 }
 .subscribe input[type="email"]::placeholder {
-    color: var(--white);
+    color: rgba(255, 255, 255, .7);
 }
 .subscribe input[type="submit"] {
     background-color: var(--white);
@@ -223,3 +228,33 @@ footer article:last-child {
     border-top: 1px solid var(--lightgray);
     padding: 15px;
 }
+/*********************
+products
+*********************/
+.products .item {
+    width: 20%;
+    float: left;
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid var(--borders);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.products .item:hover {
+    border: 1px solid var(--primary);
+}
+.products .item img{
+    width: 100%;
+}
+/*
+.owl-carousel .item {
+    border: 1px solid var(--borders);
+    padding: 30px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.owl-carousel .item:hover {
+    border: 1px solid var(--primary);
+}
+*/
