@@ -165,6 +165,7 @@ subscribe
 .subscribe input {
     padding: 10px;
     border-radius: 5px;
+    outline: none;
 }
 .subscribe input[type="email"] {
     background-color: transparent;
@@ -184,4 +185,41 @@ subscribe
     background-color: var(--black);
     color: var(--white);
     border: 1px solid var(--black);
+}
+/*********************
+footer
+*********************/
+footer {
+    text-align: center;
+}
+footer .logo {
+    font-size: 1.7rem;
+    text-shadow: 0 0 1px var(--text);
+    font-family: var(--headings);
+}
+footer .logo:hover {
+    color: var(--text);
+}
+footer .logo i {
+    color: var(--text);
+    font-size: 2.2rem;
+}
+footer nav {
+    margin: 20px 0;
+}
+footer nav a {
+    font-size: .8rem;
+}
+footer .icons a i {
+    font-size: 1.5rem;
+    transition: var(--transition);
+    color: var(--black);
+    margin: 0 10px;
+}
+footer .icons a i:hover {
+    color: var(--primary);
+}
+footer article:last-child {
+    border-top: 1px solid var(--lightgray);
+    padding: 15px;
 }
