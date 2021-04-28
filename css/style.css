@@ -44,6 +44,7 @@ ul {
 .container {
     width: 70%;
     margin: auto;
+    padding: 100px 0;
 }
 button {
     padding: 15px 40px;
@@ -51,6 +52,18 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+h2::before {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-bottom: 10px;
 }
 /*********************
 topbar
@@ -122,4 +135,16 @@ header button {
 }
 header button:hover {
     background-color: var(--black);
+}
+/*********************
+featuredItems
+*********************/
+.owl-carousel .item {
+    border: 1px solid var(--borders);
+    padding: 30px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.owl-carousel .item:hover {
+    border: 1px solid var(--primary);
 }
