@@ -139,12 +139,14 @@ header h1::after {
     background-color: var(--primary);
     margin: 20px 0;
 }
-header button {
+header button,
+.contact button {
     background-color: var(--primary);
     border: none;
     color: var(--white);
 }
-header button:hover {
+header button:hover,
+.contact button:hover {
     background-color: var(--black);
 }
 /*********************
@@ -256,11 +258,11 @@ products
 /*********************
 about
 *********************/
-.about div:first-child {
+.about div:nth-child(1) {
     width: 40%;
     float: left;
 }
-.about div:last-child {
+.about div:nth-child(2) {
     width: 58%;
     float: right;
 }
@@ -271,12 +273,31 @@ about
     margin-bottom: 15px;
     line-height: 2;
 }
-.about .icons {
-    margin-right: auto;
-}
 .about span {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .about span a:hover {
+    color: var(--black);
+}
+/*********************
+contact
+*********************/
+.contact article > div:first-child {
+    float: left;
+    width: 48%;
+}
+.contact article > div:last-child {
+    float: right;
+    width: 48%;
+}
+.contact input, .contact textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.contact span {
+    margin-right: 10px;
+}
+.contact span a:hover {
     color: var(--black);
 }
