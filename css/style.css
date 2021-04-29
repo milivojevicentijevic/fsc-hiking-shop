@@ -371,4 +371,17 @@ responsive
     .subscribe input[type="submit"] {
         padding: 11px 20px;
     }
+    .products .item {
+        width: 90%;
+        margin: 20px;
+    }
+    .about div:nth-child(1), 
+    .about div:nth-child(2),
+    .contact article > div:first-child,
+    .contact article > div:last-child,
+    .single article > div:first-child,
+    .single article > div:last-child {
+        width: 100%;
+    }
+
 }
