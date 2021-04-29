@@ -346,6 +346,32 @@ single
 /*********************
 responsive
 *********************/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 50px 0;
+    }
+    header article {
+        width: 90%;
+        margin: auto;
+    }
+    header {
+        padding: 100px 0;
+        background-position: center right;
+    }
+    .products .item {
+        width: 40%;
+        margin: 20px;
+    }
+    .about div:nth-child(1), 
+    .about div:nth-child(2),
+    .contact article > div:first-child,
+    .contact article > div:last-child,
+    .single article > div:first-child,
+    .single article > div:last-child {
+        width: 100%;
+    }
+}
 @media (max-width: 767px) {
     .container {
         width: 95%;
